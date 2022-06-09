@@ -1,0 +1,18 @@
+/* navigation bar */
+nav img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0.8rem 0 0.8rem 0;
+}
+
+/* main */
+main .breadcrumb img {
+    width: 3.5%;
+    height: 3.5%;
+}
+
+article img {
+    width: 100%;
+}

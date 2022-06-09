@@ -1,100 +1,313 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Blender 3.1 Reference Manual
-        </title>
-        <style>
-            body {
-                background-color: rgb(30,30,30);
-                color: lightgray;
-                font-family: Ubuntu, sans-serif;
-            }
-            a {
-                color: #2d80ce;
-                text-decoration: none;
-            }
-            h1.heading {
-                background-color: #1E6BC9;
-                text-align: center;
-            }
-            div.box_link {
-                background-color: #1A1A1A;
-                padding: 5px;
-                margin: 2px;
-            }
-        </style>
-    </head>
-    <body>
-        <h1 class="heading">Blender 3.1 Reference Manual</h1>
-        <p>Welcome to the manual for Blender, the free and open source 3D
-            creation suite.
-        </p>
-        <br>
-        <p>This site can be used offline:</p>
-        <ul>
-            <li><a href="link1.html">Download the manual as web pages (HTML)</a></li>
-            <li><a href="link2.html">Download the manual in an e-book format (EPUB)</a></li>
-        </ul>
 
-        <h2>Getting Started</h2>
-        <div><p><a href="getting_started/about/index.html">About Blender</a></p></div>
-        <div><p><a href="getting_started/installing/index.html">Installing Blender</a></p></div>
-        <div><p><a href="getting_started/configuration/index.html">Configuring Blender</a></p></div>
-        <div><p><a href="getting_started/help/index.html">Help System</a></p></div>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/image.css">
+    <link rel="stylesheet" href="css/font.css">
+    <title>Blender 3.1 Reference Manual</title>
+</head>
 
-        <h2>Sections</h2>
-        <div class="box_link">
-            <a href="interface/index.html">
-                <img src="images/index/index_interface.jpg" alt="interface.jpg" width="350" height="130">
-                <h3>User Interface</h3>
-                <p>An introduction to Blender's window system, widgets and tools</p>
-            </a>
-        </div>
-        <br><br><br>
-        <div>
-            <a href="editors/index.html">
-                <img src="images/index/index_editors.jpg" alt="editor.jpg" width="350" height="130">
-                <h3>User Interface</h3>
-                <p>Overview of the interface and functionality of all editors</p>
-            </a>
-        </div>
-        <div>
-            <a href="scene_layout/index.html">
-                <img src="images/index/index_scene.jpg" alt="scene.jpg" width="350" height="130">
-                <h3>Scenes and Objects</h3>
-                <p>Objects and their organization into scenes, view layers and collections.</p>
-            </a>
-        </div>
-        <div>
-            <a href="modeling/index.html">
-                <img src="images/index/index_modeling.jpg" alt="modelling.jpg" width="350" height="130">
-                <h3>Modelling</h3>
-                <p>Meshes, curves, metaballs, text, modelling tools, and modifiers.</p>
-            </a>
-        </div>
-        <div>
-            <a href="sculpting_&_painting/index.html">
-                <img src="images/index/index_painting.jpg" alt="painting.jpg" width="350" height="130">
-                <h3>Sculpting and Painting</h3>
-                <p>Sculpting, texture painting and vertex painting.</p>
-            </a>
-        </div>
-        <div>
-            <a href="grease_pencil/index.html">
-                <img src="images/index/index_grease-pencil.jpg" alt="grease_pencil.jpg" width="350" height="130">
-                <h3>Grease Pencil</h3>
-                <p>2D drawing and animation with Grease Pencil</p>
-            </a>
-        </div>
+<body>
+    <section>
+        <!-- navigation bar (common for all web pages) -->
+        <nav>
+            <div class="side-scroll">
+                <!-- sidebar top container -->
+                <div class="top">
+                    <h3>Blender 3.1 Manual</h3>
+                    <img src="images/logos/blender-logo.svg" alt="blender-logo">
+                    <input type="search" placeholder="  Search docs">
+                </div>
+                <!-- navigation bar -->
+                <div class="menu">
+                    <ul>
+                        <li><a href="getting_started/index.html">Getting started</a></li>
+                        <li><a href="interface/index.html">User Interface</a></li>
+                        <li><a href="editors/index.html">Editors</a>
+                        <li><a href="scene_layout/index.html">Scenes & Objects</a></li>
+                        <li><a href="modelling/index.html">Modelling</a></li>
+                        <li><a href="sculpt_paint/index.html">Sculpting& & Painting</a></li>
+                        <li><a href="grease_pencil/index.html">Grease Pencil</a></li>
+                        <li><a href="animation/index.html">Animation & Rigging</a></li>
+                        <li><a href="physics/index.html">Physics</a></li>
+                        <li><a href="render/index.html">Rendering</a></li>
+                        <li><a href="compositing/index.html">Compositing</a></li>
+                        <li><a href="movie_clip/index.html">Movie Tracking & Masking</a></li>
+                        <li><a href="video_editing/index.html">Video Editing</a></li>
+                        <li><a href="files/index/html">Assets, Files & Data System</a></li>
+                        <li><a href="addons/index.html">Addons</a>
+                        <li><a href="advanced.index.html">Advanced</a></li>
+                        <li><a href="troubleshooting/index.html">Troubleshooting</a></li>
+                        <li><a href="glossary/index.html">Glossary</a></li>
+                        <li><a href="about/index.html">Contribute Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--------------------------------------------------------------------->
 
-        <h1>Get Involved</h1>
-        <p>
-            This manual is maintained largely by volunteers.
-            <br>Please consider to join the effort and <a href="link1.html">Contribute to this manual.</a><br>
-        </p>
-        <br>
-        <br>
-        <a href="getting_started/index.html"><button>Next</button></a>
-    </body>
+        <!-- main content of the web page  -->
+        <div class="main-content">
+            <main>
+                <div class="main">
+                    <!-- main page section -->
+                    <div class="breadcrumb">
+                        <img src="images/logos/house.jpg" alt="house">
+                    </div>
+                    <hr>
+                    <section class="main-section">
+                        <h1>Blender 3.1 Reference Manual</h1>
+                        <p>Welcome to the manual for Blender, the free and open source 3D creation suite.</p>
+                        <p>This site can be used offline: </p>
+                        <ul>
+                            <li>
+                                <a href="/blender_manual_html.zip">
+                                    Download the manual as web pages (HTML)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/blender_manual_epub.zip">
+                                    Download the manual in an e-book format (EPUB)
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="navlinks">
+                        <h3>Getting Started</h3>
+                        <div><a href="getting_started/about/index.html">About Blender</a></div>
+                        <div><a href="getting_started/installing/index.html">Install Blender</a></div>
+                        <div><a href="getting_started/configuration/index.html">Configuring Blender</a></div>
+                        <div><a href="getting_started/help.html">Help System</a></div>
+                    </section>
+
+                    <!-- containers -->
+                    <section id="navcards">
+                        <h3>Sections</h3>
+                        <section id="navcards2">
+                            <article class="container">
+                                <a href="interface/index.html">
+                                    <img src="images/index/index_interface.jpg" alt="">
+                                </a>
+                                <h3 id="fonts" style="font-family: 'Roboto Slab',sans-serif;"><a
+                                        href="/interface/index.html">
+                                        User Interface
+                                    </a>
+                                </h3>
+                                <p>An introduction to Blender's window system, widgets and tools.</p>
+                            </article>
+                            <article class="container">
+                                <a href="/editors/index.html">
+                                    <img src="images/index/index_editors.jpg" alt="">
+                                </a>
+                                <h3>
+                                    <a href="/editors/index.html">
+                                        Editors
+                                    </a>
+                                </h3>
+
+                                <p>Overview of the interface and functionality of all editors.</p>
+                            </article>
+                            <article class="container">
+                                <a href="/scene_layout/index.html">
+                                    <img src="images/index/index_scene.jpg" alt="">
+                                </a>
+                                <h3>
+                                    <a href="/scene_layout/index.html">
+                                        Scenes & Objects
+                                    </a>
+                                </h3>
+                                <p>Objects and their organization into scenes, view layers and collections.</p>
+                            </article>
+                            <article class="container">
+                                <a href="/modelling/index.html">
+                                    <img src="images/index/index_modeling.jpg" alt="">
+                                </a>
+                                <h3><a href="/modelling/index.html">
+
+                                        Modelling
+                                    </a>
+                                </h3>
+                                <p>Meshes, curves, metaballs, text, modelling tools and modifiers.</p>
+                            </article>
+                            <article class="container">
+                                <a href="/sculpt_paint/index.html">
+
+                                    <img src="images/index/index_painting.jpg" alt="">
+                                </a>
+                                <h3><a href="/sculpt_paint/index.html">
+
+                                        Sculpting & Painting
+                                    </a>
+                                </h3>
+                                <p>Sculpting,texture painting and vertex painting.</p>
+                            </article>
+                            <article class="container">
+                                <a href="/grease_pencil/index.html">
+
+                                    <img src="images/index/index_grease-pencil.jpg" alt="">
+                                </a>
+                                <h3><a href="/grease_pencil/index.html">
+
+                                        Grease Pencil</h3>
+                                </a>
+                                <p>2D drawing and animation with Grease Pencil.</p>
+                            </article>
+                            <article class="container">
+                                <a href="/animation/index.html">
+                                    <img src="images/index/index_animation.jpg" alt="">
+
+                                </a>
+                                <h3><a href="/animation/index.html">
+
+                                        Animation & Rigging
+                                    </a>
+                                </h3>
+                                <p>Keyframes, drivers, constraints, armatures and shape keys.</p>
+                            </article>
+                            <article class="container">
+                                <a href="/physics/index.html">
+                                    <img src="images/index/index_physics.jpg" alt="">
+
+                                </a>
+                                <h3><a href="/physics/index.html">
+                                        Physics
+                                    </a>
+
+                                </h3>
+                                <p>Physics simulations, particle systems and dynamic paint.</p>
+                            </article>
+                            <article class="container">
+                                <a href="/render/index.html">
+
+                                    <img src="images/index/index_render.jpg" alt="">
+                                </a>
+                                <h3><a href="/render/index.html">
+                                        Rendering
+
+                                    </a>
+                                </h3>
+                                <p>Rendering and shading with Eevee, Cycles and Freestyle.</p>
+                            </article>
+                            <article class="container">
+                                <a href="/compositing/index.html">
+                                    <img src="images/index/index_compositing.jpg" alt="">
+                                </a>
+                                <h3><a href="/compositing/index.html">
+
+                                        Compositing
+                                    </a>
+                                </h3>
+                                <p>Post-processing with the compositing nodes.</p>
+                            </article>
+                            <article class="container">
+                                <a href="/movie_clip/index.html">
+
+                                    <img src="images/index/index_movie-clip.jpg" alt="">
+                                </a>
+                                <h3><a href="/movie_clip/index.html">
+
+                                        Motion Tracking & Masking
+                                    </a>
+                                </h3>
+                                <p>Video motion tracking & masking.</p>
+                            </article>
+                            <article class="container">
+                                <a href="/video_editing/index.html">
+
+                                    <img src="images/index/index_sequencer.jpg" alt="">
+                                </a>
+                                <h3><a href="/video_editing/index.html">
+
+                                        Video Editing
+                                    </a>
+                                </h3>
+                                <p>Video editing with the sequencer.</p>
+                            </article>
+                            <article class="container">
+                                <h3><a href="/files/index/html">
+
+                                        Assets, Files & Data System
+                                    </a>
+                                </h3>
+                                <p>Data-block management and the structure of blend files.</p>
+                            </article>
+                            <article class="container">
+                                <h3><a href="/addons/index.html">
+
+                                        Add-ons
+                                    </a>
+                                </h3>
+                                <p>Additional functionality available as add-ons.</p>
+                            </article>
+                            <article class="container">
+                                <h3><a href="/advanced.index.html">
+
+                                        Advanced
+                                    </a>
+                                </h3>
+                                <p>Python scripting, how to write add-ons and a reference for command line arguments.
+                                </p>
+                            </article>
+                            <article class="container">
+                                <h3><a href="/troubleshooting/index.html">
+
+                                        Troubleshooting
+                                    </a>
+                                </h3>
+                                <p>Solving crashes, graphics issues and Python errors, recovering data and reporting
+                                    bugs.</p>
+                            </article>
+                            <article class="container">
+                                <h3><a href="/glossary/index.html">
+
+                                        Glossary
+                                    </a>
+                                </h3>
+                                <p>A list of items and definitions used in Blender and this manual.</p>
+                            </article>
+                            <article class="container">
+                                <h3><a href="/about/index.html">
+                                        Manual Index
+                                    </a>
+                                </h3>
+                                <p>A list of terms linked to the Glossary.</p>
+                            </article>
+                        </section>
+                    </section>
+
+                    <section>
+                        <h3>Get Involved</h3>
+                        <p>This manual is maintained largely by volunteers.</p>
+                        <p>Please consider to join this effort and Contribute to this Manual</p>
+                    </section>
+
+
+                    <!-- footer of the web page  -->
+                    <hr id="bottom">
+                    <footer>
+                        <span>&copy; <a>Copyright</a></span>: This page is licensed under a CC-BY-SA 4.0 Int. <br>
+                        <p class="license">License. Last updated on 05/02/2022.</p>
+                        <ul id="footer-links">
+                            <li>&#9998; <a href="empty.html">Edit Page<a></li>
+                            <li>&#128030 <a href="empty.html">Report issue on this page</a></li>
+                        </ul>
+                    </footer>
+                    <!---------------------------------------------------------->
+
+
+                </div>
+            </main>
+        </div>
+        <!------------------------------------------------------------------------>
+
+    </section>
+</body>
+
 </html>

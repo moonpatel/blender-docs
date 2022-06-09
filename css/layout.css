@@ -1,0 +1,187 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+/* navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 2em;
+    width: 300px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: 100%;
+    color: #9b9b9b;
+    z-index: 200;
+}
+
+nav > div {
+    margin: 0;
+}
+
+nav div.top {
+    width: 100%;
+    height: 160px;
+    margin: 0;
+    padding-top: 0.8em;
+    padding-bottom: 0.5em;
+    display: block;
+}
+
+nav div.top > h3 {
+    font-size: 1.05rem;
+    margin: 0;
+    text-align: center;
+}
+
+nav div.top  input {
+    font-size: 0.9rem;
+    width: 93%;
+    height: 1.8rem;
+    border-radius: 2em;
+    display: block;
+    margin: 0.5em auto 0.5em auto;
+}
+/* NOTE: margin does not works with inline or inline-block elements so they cannot be 
+centered with margin */
+
+
+nav div.side-scroll {
+    width: 320px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+div.menu {
+    height: 595px;
+    z-index: 200;
+}
+
+div.menu > ul {
+    padding: 0;
+    list-style: none;
+}
+
+div.menu > ul > li {
+    word-spacing: 0.12rem;
+    font-family: Lato, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: block;
+    padding: 0.4em 1em 0.36em 1em;
+}
+
+
+/* main  */
+div.main-content {
+    margin: 0 0 0 300px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0;
+    padding: 1.8em 3em;
+    box-sizing: border-box;
+}
+
+main > div.main {
+    margin: 0;
+}
+
+main > div.main section.navlinks div {
+    width: 45%;
+    height: auto;
+    display: inline-block;
+    margin: 1em 0em 1em 0em;
+    padding: 0.5em 0 0.5em 1em;
+}
+
+#navcards2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+main > div.main #navcards article {
+    text-align: left;
+    width: 45%;
+    margin: 1em 1em 1em 1em;
+    border-radius: 0.25em;
+}
+
+#navcards > h3 {
+    display: block;
+}
+
+#navcards article h3, #navcards article p {
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0.86em;
+    margin-right: 0.8em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+}
+#navcards article p {
+    margin-left: 1.3em;
+    margin-bottom: 1.2em;
+}
+article img {
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+}
+
+.list {
+    margin: 0.6rem 0;
+    list-style: none;
+}
+
+a.index-links {
+    border-bottom: solid #d2d2d2 0.05rem;
+    display: block;
+    padding: 0.7rem 0;
+}
+
+ul.list li {
+    padding: 0.3rem 0;
+}
+
+/* other */
+hr {
+    margin: 0;
+}
+
+#bottom {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+#footer-links {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin-top: 0.2rem;
+    font-size: 0.9em;
+}
+
+#footer-links li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+p.license {
+    margin-top: 0.3rem;
+    margin-bottom: 0.15rem;
+}
